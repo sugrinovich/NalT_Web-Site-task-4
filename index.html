@@ -16,17 +16,25 @@
             src="image/Logo.png" 
             alt="logo">
         </div>
-        <nav>
-            <div class="text-center" id="menu">
-                <ul class="d-flex justify-content-center list-unstyled gap-3 mt-3">
-                    <li>
-                        <a class="nav-link text-white px-2 py-1" 
-                        style="background-color: rgb(13, 202, 240); border-radius: 0 20px 0 20px;"
+        <nav class="navbar navbar-expand-md bg-light navbar-light">
+            <button 
+                class="navbar-toggler ms-auto me-0" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#menu"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-center" id="menu">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-white px-2 py-1 d-inline-block" 
+                        style="background-color: rgb(13, 202, 240); border-radius: 0 20px 0 20px;"    
                         href="#">Главная</a>
                     </li>
-                    <li>
-                        <a class="nav-link" 
-                        href="#">Каталог</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Каталог</a>
                     </li>
                 </ul>
             </div>
@@ -76,97 +84,119 @@
         <div class="container-fluid" id="main" style="height: auto; min-height: 65vw;">
             <div class="row g-2">
                 <div class="col-12 col-lg-5 d-flex flex-column">
-                    <div class="border p-3 mb-2 d-flex align-items-center" style="min-height: 14vw;">
-                        <div class="col-4">
-                            <img class="img-fluid w-75" src="image/Naruto-Main.jpg">
-                        </div>
-                        <div class="col-8">
-                            <h2 class="text-center mb-2 fs-3">Наруто</h2>
-                            <p class="overflow-hidden">
-                                Это история о Наруто Узумаки — юном нинде-изгое, который мечтает стать Хокагэ, 
-                                лидером своей деревни, чтобы все признали его силу. 
-                                Запечатанный внутри него Девятихвостый Лис-бидзю когда-то навлёк на деревню страшное бедствие. 
-                                Преодолевая невзгоды, Наруто идёт к своей цели, обретая друзей, 
-                                верных товарищей и несгибаемую волю.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="p-3 mb-2 d-flex align-items-center" style="min-height: 14vw;">
-                        <div class="col-8">
-                            <h2 class="text-center mb-2">Берсерк</h2>
-                            <p class="overflow-hidden">
-                                Мрачный и эпический эпос в жанре тёмного фэнтези. Следуйте за Гатсом, одиноким наёмником, 
-                                отмеченным демонической печатью, который обречён вести вечную борьбу с ужасающими существами 
-                                из Астрального мира. Его путь — это кровавый поход мести человеку, которого он когда-то считал другом, 
-                                но который ради власти принёс его и всех его товарищей в жертву.
-                            </p>
-                        </div>
-                        <div class="col-4 d-flex justify-content-end">
-                            <img class="img-fluid w-75" src="image/Berserk-Main.jpg">
+                    <!-- Наруто -->
+                    <div class="border p-3 mb-2" style="min-height: 14vw;">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-lg-4 d-flex justify-content-center mb-3 mb-lg-0">
+                                <img class="img-fluid w-75 w-lg-100" src="image/Naruto-Main.jpg">
+                            </div>
+                            <div class="col-12 col-lg-8 text-center text-lg-start">
+                                <h2 class="mb-2 fs-3">Наруто</h2>
+                                <p class="overflow-hidden">
+                                    Это история о Наруто Узумаки — юном нинде-изгое, который мечтает стать Хокагэ, 
+                                    лидером своей деревни, чтобы все признали его силу. 
+                                    Запечатанный внутри него Девятихвостый Лис-бидзю когда-то навлёк на деревню страшное бедствие. 
+                                    Преодолевая невзгоды, Наруто идёт к своей цели, обретая друзей, 
+                                    верных товарищей и несгибаемую волю.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="border p-3 mb-2 d-flex align-items-center g-0" style="min-height: 14vw;">
-                        <div class="col-4 p-0">
-                            <img class="img-fluid w-75" src="image/Dororo-Mein.jpg" style="object-fit: cover;">
-                        </div>
-                        <div class="col-8 p-3">
-                            <h2 class="text-center mb-2">Дороро</h2>
-                            <p class="overflow-hidden">
-                                «Дороро» — это мрачная и трогательная история о самурае Хяккимару, 
-                                который в младенчестве был лишён 48 частей тела своим отцом-демоном в обмен на могущество. 
-                                Теперь он скитается по воюющей стране, сражаясь с демонами, 
-                                чтобы вернуть своё тело. В его путешествии к нему присоединяется сирота-вор Дороро, 
-                                и вместе они ищут своё место в этом жестоком мире.
-                            </p>
+                    
+                    <!-- Берсерк -->
+                    <div class="p-3 mb-2" style="min-height: 14vw;">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-lg-4 d-flex justify-content-center mb-3 mb-lg-0 order-lg-1 order-1">
+                                <img class="img-fluid w-75 w-lg-100" src="image/Berserk-Main.jpg">
+                            </div>
+                            <div class="col-12 col-lg-8 text-center text-lg-start order-lg-2 order-2">
+                                <h2 class="mb-2">Берсерк</h2>
+                                <p class="overflow-hidden">
+                                    Мрачный и эпический эпос в жанре тёмного фэнтези. Следуйте за Гатсом, одиноким наёмником, 
+                                    отмеченным демонической печатью, который обречён вести вечную борьбу с ужасающими существами 
+                                    из Астрального мира. Его путь — это кровавый поход мести человеку, которого он когда-то считал другом, 
+                                    но который ради власти принёс его и всех его товарищей в жертву.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="p-3 d-flex align-items-center" style="min-height: 14vw;">
-                        <div class="col-8">
-                            <h2 class="text-center mb-2">ВанПис</h2>
-                            <p class="overflow-hidden">
-                                Монки Д. Луффи, весёлый и бесстрашный парень, мечтает найти легендарное сокровище Ван Пис и стать 
-                                Королём Пиратов. Съев в детстве Дьявольский плод, он получил силу растягиваться как резина, 
-                                но потерял возможность плавать. Вместе со своей разношёрстной командой Луффи отправляется в опасное 
-                                плавание по Гранд Лайн, где его ждут невероятные приключения, сильные противники и верные друзья.
-                            </p>
+                    
+                    <!-- Дороро -->
+                    <div class="border p-3 mb-2" style="min-height: 14vw;">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-lg-4 d-flex justify-content-center mb-3 mb-lg-0">
+                                <img class="img-fluid w-75 w-lg-100" src="image/Dororo-Mein.jpg" style="object-fit: cover;">
+                            </div>
+                            <div class="col-12 col-lg-8 text-center text-lg-start">
+                                <h2 class="mb-2">Дороро</h2>
+                                <p class="overflow-hidden">
+                                    «Дороро» — это мрачная и трогательная история о самурае Хяккимару, 
+                                    который в младенчестве был лишён 48 частей тела своим отцом-демоном в обмен на могущество. 
+                                    Теперь он скитается по воюющей стране, сражаясь с демонами, 
+                                    чтобы вернуть своё тело. В его путешествии к нему присоединяется сирота-вор Дороро, 
+                                    и вместе они ищут своё место в этом жестоком мире.
+                                </p>
+                            </div>
                         </div>
-                        <div class="col-4 d-flex justify-content-end">
-                            <img class="img-fluid w-75" src="image/VanPeas-Main.jpg">
+                    </div>
+                    
+                    <!-- ВанПис -->
+                    <div class="p-3" style="min-height: 14vw;">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-lg-4 d-flex justify-content-center mb-3 mb-lg-0">
+                                <img class="img-fluid w-75 w-lg-100" src="image/VanPeas-Main.jpg">
+                            </div>
+                            <div class="col-12 col-lg-8 text-center text-lg-start">
+                                <h2 class="mb-2">ВанПис</h2>
+                                <p class="overflow-hidden">
+                                    Монки Д. Луффи, весёлый и бесстрашный парень, мечтает найти легендарное сокровище Ван Пис и стать 
+                                    Королём Пиратов. Съев в детстве Дьявольский плод, он получил силу растягиваться как резина, 
+                                    но потерял возможность плавать. Вместе со своей разношёрстной командой Луффи отправляется в опасное 
+                                    плавание по Гранд Лайн, где его ждут невероятные приключения, сильные противники и верные друзья.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-12 col-lg-7 d-flex flex-column">
-                    <div class="border p-3 d-flex align-items-center mb-1" style="min-height: 30vw;">
-                        <div class="col-4">
-                            <img class="img-fluid w-100 pr-5" src="image/Ataka-Mein.jpg">
-                        </div>
-                        <div class="col-8">
-                            <h2 class="text-center mb-2">Атака титанов</h2>
-                            <p class="overflow-hidden px-5">
-                                Человечество доживает свои последние дни, запершись за тремя гигантскими стенами, 
-                                которые защищают их от титанов — огромных загадочных существ, пожирающих людей. 
-                                Юный Эрен Йегер, поклявшийся уничтожить всех титанов после разрушения его родного города, 
-                                присоединяется к Разведкорпусу, чтобы отвоевать мир у чудовищ. Однако он и представить не мог, 
-                                что истина о титанах окажется ужаснее, чем можно было вообразить.
-                            </p>
-                            <a class="px-5" style="text-decoration: none;" href="#">Подробнее></a>
+                <div class="col-12 col-lg-7 d-flex flex-column justify-content-between">
+                    <!-- Атака титанов -->
+                    <div class="border p-3 mb-1" style="min-height: 30vw;">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-12 col-lg-4 d-flex justify-content-center mb-3 mb-lg-0">
+                                <img class="img-fluid w-100 w-lg-100" src="image/Ataka-Mein.jpg">
+                            </div>
+                            <div class="col-12 col-lg-8 text-center text-lg-start">
+                                <h2 class="mb-2">Атака титанов</h2>
+                                <p class="overflow-hidden">
+                                    Человечество доживает свои последние дни, запершись за тремя гигантскими стенами, 
+                                    которые защищают их от титанов — огромных загадочных существ, пожирающих людей. 
+                                    Юный Эрен Йегер, поклявшийся уничтожить всех титанов после разрушения его родного города, 
+                                    присоединяется к Разведкорпусу, чтобы отвоевать мир у чудовищ. Однако он и представить не мог, 
+                                    что истина о титанах окажется ужаснее, чем можно было вообразить.
+                                </p>
+                                <a class="d-block text-center text-lg-start" style="text-decoration: none;" href="#">Подробнее></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="border p-3 d-flex align-items-center mt-5" style="min-height: 30vw;">
-                        <div class="col-8">
-                            <h2 class="text-center mb-2">Поднятие уровня в одиночку</h2>
-                            <p class="overflow-hidden px-5">
-                                Сон Иль-Хан, считавшийся самым слабым охотником в мире, едва выживал в самых низкоуровневых подземельях. 
-                                Однажды он оказывается запертым в смертельной ловушке, где после прохождения сложнейшего испытания 
-                                получает уникальную способность — «Систему подъёма уровня». Теперь он может расти в силе, 
-                                как в компьютерной игре, и у него появляется шанс стать величайшим охотником, 
-                                пускаясь в самые опасные подземелья в полном одиночестве.
-                            </p>
-                            <a class="px-5" style="text-decoration: none;" href="#">Подробнее></a>
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid w-100" src="image/Solo-Mein.jpg">
+                    
+                    <!-- Поднятие уровня в одиночку -->
+                    <div class="border p-3 mt-5" style="min-height: 30vw;">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-lg-4 d-flex justify-content-center mb-3 mb-lg-0 order-lg-1 order-1">
+                                <img class="img-fluid w-100 w-lg-100" src="image/Solo-Mein.jpg">
+                            </div>
+                            <div class="col-12 col-lg-8 text-center text-lg-start order-lg-2 order-2">
+                                <h2 class="mb-2">Поднятие уровня в одиночку</h2>
+                                <p class="overflow-hidden">
+                                    Сон Иль-Хан, считавшийся самым слабым охотником в мире, едва выживал в самых низкоуровневых подземельях. 
+                                    Однажды он оказывается запертым в смертельной ловушке, где после прохождения сложнейшего испытания 
+                                    получает уникальную способность — «Систему подъёма уровня». Теперь он может расти в силе, 
+                                    как в компьютерной игре, и у него появляется шанс стать величайшим охотником, 
+                                    пускаясь в самые опасные подземелья в полном одиночестве.
+                                </p>
+                                <a class="d-block text-center text-lg-start" style="text-decoration: none;" href="#">Подробнее></a>
+                            </div>
                         </div>
                     </div>
                 </div>
